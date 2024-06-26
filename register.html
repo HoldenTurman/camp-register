@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h1>Camp Registration</h1>
+    <form id="registrationForm">
+        <fieldset id="participants">
+            <legend>Participant Information</legend>
+            <section class="participant1">
+                <label for="firstName1">First Name*</label>
+                <input type="text" id="firstName1" name="firstName1" required>
+
+                <label for="activity1">Activity #*</label>
+                <input type="text" id="activity1" name="activity1" required>
+
+                <label for="fee1">Fee ($)*</label>
+                <input type="number" id="fee1" name="fee1" required>
+
+                <label for="date1">Desired Date*</label>
+                <input type="date" id="date1" name="date1" required>
+
+                <label for="grade1">Grade</label>
+                <input type="text" id="grade1" name="grade1">
+            </section>
+        </fieldset>
+
+        <button type="button" id="addParticipant">Add Participant</button>
+
+        <fieldset id="contactInfo">
+            <legend>Household / Adult Primary Contact</legend>
+            <label for="adultName">Name*</label>
+            <input type="text" id="adultName" name="adultName" required>
+
+            <label for="address1">Address 1*</label>
+            <input type="text" id="address1" name="address1" required>
+
+            <label for="city">City*</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State*</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone*</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="zip">Zip*</label>
+            <input type="text" id="zip" name="zip" required>
+
+            <label for="relationship">Relationship to Participants:</label>
+            <select id="relationship" name="relationship">
+                <option value="self">Self</option>
+                <option value="mother">Mother</option>
+                <option value="father">Father</option>
+                <option value="guardian">Guardian</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <section id="summary" class="hide"></section>
+
+    <script src="register.js" type="module"></script>
+</body>
+</html>
